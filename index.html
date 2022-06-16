@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./js/loadScript.js"></script>
+    <script defer src="./js/useFull.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <form id="datecalc">
+        <h3>Калькулятор дат</h3>
+        <label>
+            <strong>Первая дата:</strong>
+            <input type="date" name="firstDate" /> 
+        </label>
+
+        <label>
+            <strong>Вторая дата:</strong>
+            <input type="date" name="secondDate" /> 
+        </label>
+        <button type="submit">Расчитать промежуток</button>
+        <p id="datecalc__result"></p>
+    </form>
+
+    <button class="thide">Скрыть таймер</button><button class="tshow">Показать таймер</button>
+    
+    <div class="show">
+        <input class="input" type="text" id="time">
+        <button class="btnstart" onclick ='Start()'>Старт</button>
+        <button class="btnstop" onclick ='Stop()'>Стоп</button>
+    </div>
+    <div class="timer" id="timer"></div>
+</body>
+<style>
+    .thide {
+        margin: 0 10px 10px 0;
+    }
+
+    .show {
+        display: none;
+    }
+
+    .btnstop {
+        display: none;
+    }
+    .input{
+        margin: 0 10px 0 0;
+    }
+
+    .timer {
+        margin: 10px 0 0 0;
+        border: 1px solid black;
+        height: 20px;
+        width: 50px;
+    }
+</style>
+</html> 
